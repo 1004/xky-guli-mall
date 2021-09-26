@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @EnableFeignClients(basePackages = "com.xky.mall.member.feign")
 @MapperScan("com.xky.mall.member.dao")
-@SpringBootApplication
+@SpringBootApplication()
 public class MemberApplication {
 
     public static void main(String[] args) {

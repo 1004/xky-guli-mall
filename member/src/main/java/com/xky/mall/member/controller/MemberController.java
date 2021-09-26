@@ -3,6 +3,7 @@ package com.xky.mall.member.controller;
 import java.util.Arrays;
 import java.util.Map;
 
+import com.xky.common.exception.RRException;
 import com.xky.mall.member.feign.CouponFeignClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -42,7 +43,8 @@ public class MemberController {
 
     @RequestMapping("/testConfig")
     public R testConfig(){
-        return R.ok().put("name",userName);
+        throw new RRException("错误");
+//        return R.ok().put("name",userName);
     }
 
     @RequestMapping("/coupon/list")

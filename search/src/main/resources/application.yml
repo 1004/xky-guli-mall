@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: mall-search
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 8.142.116.190:8848
